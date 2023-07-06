@@ -1,0 +1,53 @@
+body{
+    margin: 0px;
+    background-image: url('images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+    
+.icons{
+    margin:5rem 25rem;
+}
+
+.fa-icons{
+    width: 100px;
+    font-size: 30px;
+    margin: 20px 10px;
+    padding: 0px 10px;
+}
+
+.main {
+    margin: 10rem 40rem;
+  }
+  
+  #in--field {
+    width: 20rem;
+    height: 2rem;
+    border-radius: 5px;
+  }
+  
+  #sub--btn {
+    width: 10rem;
+    height: 2.2rem;
+    margin-left: 0.5rem;
+    font-weight: 800;
+    background-color: #90EE90;
+    border-radius: 5px;
+  }
+
+  #delete-btn{
+    width: 5rem;
+    height: 2.2rem;
+    margin-left: 0.5rem;
+    font-weight: 800;
+    background-color: red;
+    border-radius: 5px;
+  }
+  
+  p{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
