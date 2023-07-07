@@ -13,13 +13,13 @@ A simple web application for managing TODO items.
 
 - **Sorting**: Implement sorting options to organize tasks by priority, due date, or category.
 
-- **EmptyNodePervention**: Implemented if the input field is empty an alert will pop-up and empty node creation will be suspended [Date: 07/07/2023]
+- **EmptyNodePervention**: Implemented if the input field is empty an alert will pop-up and empty node creation will be suspended [completed on Date: 07/07/2023]
 
 - **Edit Functionality**: Allow users to edit task descriptions or update task details.
 - **Categories/Labels**: Add support for categorizing tasks with labels for better organization.
 - **User Accounts**: Enable user account creation and login to save tasks across sessions.
 - **Data Persistence**: Implement data storage to retain tasks even after the page is refreshed.
-- **Mobile Optimization**: Improve the responsiveness and usability of the application on mobile devices.
+- **Mobile Optimization**: Improve the responsiveness and usability of the application on mobile devices. [completed on Date: 07/07/2023]
 - **Notifications/Reminders**: Introduce reminders or notifications for upcoming or overdue tasks.
 - **Collaboration**: Add features for sharing tasks or collaborating on projects with other users.
 - **Dark Mode**: Provide a dark mode option for improved visibility in low-light environments.

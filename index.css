@@ -1,8 +1,17 @@
 body{
-    margin: 0px;
-    background-image: url('images/background.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+  margin: 0;
+  width: 100%;
+  height: 120vh;
+  background-image: url('images/background.jpg');
+  background-repeat: 100% 100%;
+  background-size: cover;
+}
+
+
+.container{
+  margin: auto;
+  width: 50%;
+  /* background-color: red; */
 }
 
     
@@ -18,15 +27,15 @@ body{
 }
 
 .main {
-    margin: 10rem 40rem;
-    display: inline-flex;
+    margin: 12rem 6rem;
     justify-content: space-between;
-  }
+   }
   
   #in--field {
     width: 20rem;
     height: 2rem;
     border-radius: 5px;
+    
   }
   
   #sub--btn {
@@ -62,3 +71,114 @@ body{
     font-weight: 600;
     text-transform: capitalize;
   }
+
+
+  /* Styles for mobile devices (up to 600px) */
+@media (max-width: 600px) {
+  .main {
+    margin: 6rem 3rem;
+    justify-content: space-between;
+   }
+
+   .container{
+    margin: auto;
+    width: 100%;
+    height: 30vh;
+  }
+
+
+
+  #in--field {
+    width: 16rem;
+    margin-bottom: 10px;
+    height: 2rem;
+    border-radius: 5px;
+    
+  }
+
+  #sub--btn {
+    width: 5rem;
+    height: 2.2rem;
+    margin-left: 0.2rem;
+    font-weight: 800;
+    background-color: #90EE90;
+    border-radius: 5px;
+  }
+
+  #delete-btn{
+    width: 5rem;
+    height: 2.2rem;
+    margin-left: 0.3rem;
+    font-weight: 800;
+    background-color: red;
+    border-radius: 5px;
+  }
+  
+  #edit-btn{
+    width: 5rem;
+    height: 2.2rem;
+    margin-left:0.3rem;
+    font-weight: 800;
+    background-color: lightyellow;
+    border-radius: 5px;
+  }
+
+  button i {
+    font-size: 15px;
+  }
+}
+
+/* Styles for tablet devices (601px to 900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+  .main {
+    margin: 7rem 7rem;
+    justify-content: space-between;
+   }
+
+   .container{
+    margin: auto;
+    width: 100%;
+    height: 30vh;
+  }
+
+
+  #in--field {
+    width: 18rem;
+    margin-bottom: 10px;
+    height: 3rem;
+    border-radius: 5px;
+    font-size: 20px;
+  }
+
+  #sub--btn {
+    width: 5rem;
+    height: 3.2rem;
+    margin-left: 0.2rem;
+    font-size: 20px;
+    font-weight: 800;
+    background-color: #90EE90;
+    border-radius: 5px;
+  }
+
+  #delete-btn{
+    width: 5rem;
+    height: 3.2rem;
+    margin-left: 0.3rem;
+    font-weight: 800;
+    background-color: red;
+    border-radius: 5px;
+  }
+  
+  #edit-btn{
+    width: 5rem;
+    height: 3.2rem;
+    margin-left:0.3rem;
+    font-weight: 800;
+    background-color: lightyellow;
+    border-radius: 5px;
+  }
+
+  button i{
+    font-size:20px;
+  }
+}

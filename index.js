@@ -5,6 +5,8 @@ const content = document.getElementById("content");
 button.addEventListener("click", function () {
   const input = document.getElementById("in--field").value;
 
+  // Validation of the input field
+
   if (input == "") {
     alert("Please enter some value!");
   } else {
@@ -18,28 +20,27 @@ button.addEventListener("click", function () {
 
     // Adding line through to the text if checkbox is clicked
 
-    checkbox.addEventListener('click',function(){
-      const checkboxes = content.querySelectorAll('input[type="checkbox"]:checked');
+    checkbox.addEventListener("click", function () {
+      const checkboxes = content.querySelectorAll(
+        'input[type="checkbox"]:checked'
+      );
       checkboxes.forEach(function (checkbox) {
         const paragraph = checkbox.parentNode;
         if (checkbox.checked) {
-          paragraph.style.textDecoration = 'line-through';
+          paragraph.style.textDecoration = "line-through";
         } else {
-          paragraph.style.textDecoration = 'none';
+          paragraph.style.textDecoration = "none";
         }
-        
-        checkbox.addEventListener('change', function(){
-          if(checkbox.checked){
-            paragraph.style.textDecoration = 'line-through'
-          }
-          else{
-            paragraph.style.textDecoration = 'none'
-          }
-        })
-        
 
+        checkbox.addEventListener("change", function () {
+          if (checkbox.checked) {
+            paragraph.style.textDecoration = "line-through";
+          } else {
+            paragraph.style.textDecoration = "none";
+          }
+        });
       });
-    })
+    });
 
     paragraph.appendChild(checkbox);
     paragraph.appendChild(textNode);
