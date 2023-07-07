@@ -4,19 +4,47 @@ const content = document.getElementById("content");
 
 button.addEventListener("click", function () {
   const input = document.getElementById("in--field").value;
-  const textNode = document.createTextNode(input);
 
-  const paragraph = document.createElement("p");
-  paragraph.style.textAlign = "center";
+  if (input == "") {
+    alert("Please enter some value!");
+  } else {
+    const textNode = document.createTextNode(input);
 
-  const checkbox = document.createElement("input");
-  checkbox.type = "checkbox";
-  
-  
+    const paragraph = document.createElement("p");
+    paragraph.style.textAlign = "center";
 
-  paragraph.appendChild(checkbox);
-  paragraph.appendChild(textNode);
-  content.appendChild(paragraph);
+    const checkbox = document.createElement("input");
+    checkbox.type = "checkbox";
+
+    // Adding line through to the text if checkbox is clicked
+
+    checkbox.addEventListener('click',function(){
+      const checkboxes = content.querySelectorAll('input[type="checkbox"]:checked');
+      checkboxes.forEach(function (checkbox) {
+        const paragraph = checkbox.parentNode;
+        if (checkbox.checked) {
+          paragraph.style.textDecoration = 'line-through';
+        } else {
+          paragraph.style.textDecoration = 'none';
+        }
+        
+        checkbox.addEventListener('change', function(){
+          if(checkbox.checked){
+            paragraph.style.textDecoration = 'line-through'
+          }
+          else{
+            paragraph.style.textDecoration = 'none'
+          }
+        })
+        
+
+      });
+    })
+
+    paragraph.appendChild(checkbox);
+    paragraph.appendChild(textNode);
+    content.appendChild(paragraph);
+  }
 
   document.getElementById("in--field").value = ""; // Clear input field
 });
@@ -25,10 +53,9 @@ deleteButton.addEventListener("click", function () {
   const checkboxes = content.querySelectorAll('input[type="checkbox"]:checked');
   checkboxes.forEach(function (checkbox) {
     const paragraph = checkbox.parentNode;
-    
+
     setTimeout(function () {
       content.removeChild(paragraph);
     }, 0);
   });
 });
-
