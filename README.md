@@ -22,7 +22,7 @@ A simple web application for managing TODO items.
 - **Mobile Optimization**: Improve the responsiveness and usability of the application on mobile devices. [completed on Date: 07/07/2023]
 - **Notifications/Reminders**: Introduce reminders or notifications for upcoming or overdue tasks.
 - **Collaboration**: Add features for sharing tasks or collaborating on projects with other users.
-- **Dark Mode**: Provide a dark mode option for improved visibility in low-light environments.
+- **Dark Mode**: Provide a dark mode option for improved visibility in low-light environments. [completed on Date:09/07/2023]
 
 Feel free to contribute by suggesting more ideas or enhancements!
 
