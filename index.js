@@ -8,7 +8,7 @@ button.addEventListener("click", function () {
   // Validation of the input field
 
   if (input == "") {
-    alert("Please enter some value!");
+    alert("Please enter some Todo's");
   } else {
     const textNode = document.createTextNode(input);
 
