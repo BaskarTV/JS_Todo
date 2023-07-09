@@ -47,8 +47,11 @@ button.addEventListener("click", function () {
     content.appendChild(paragraph);
   }
 
+
   document.getElementById("in--field").value = ""; // Clear input field
 });
+
+// Delete button
 
 deleteButton.addEventListener("click", function () {
   const checkboxes = content.querySelectorAll('input[type="checkbox"]:checked');
@@ -60,3 +63,25 @@ deleteButton.addEventListener("click", function () {
     }, 0);
   });
 });
+
+
+// Dark Mode 
+
+const btnText = document.querySelector('.change');
+
+function toggleDarkMode() {
+  const body = document.body;
+  const isDarkMode = body.classList.toggle('dark');
+  
+  if (isDarkMode) {
+    btnText.textContent = 'ON';
+    btnText.classList.add("green");
+    btnText.style.fontWeight = 900;
+  } else {
+    btnText.textContent = 'OFF';
+    btnText.classList.remove("green");
+   
+  }
+}
+
+btnText.addEventListener('click', toggleDarkMode);
