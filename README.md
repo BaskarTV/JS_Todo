@@ -15,7 +15,7 @@ A simple web application for managing TODO items.
 
 - **EmptyNodePervention**: Implemented if the input field is empty an alert will pop-up and empty node creation will be suspended [completed on Date: 07/07/2023]
 
-- **Edit Functionality**: Allow users to edit task descriptions or update task details.
+- **Edit Functionality**: Allow users to edit task descriptions or update task details. [completed on Date: 10/07/2023]
 - **Categories/Labels**: Add support for categorizing tasks with labels for better organization.
 - **User Accounts**: Enable user account creation and login to save tasks across sessions.
 - **Data Persistence**: Implement data storage to retain tasks even after the page is refreshed.
